@@ -1,6 +1,0 @@
-{
-  "name": "AWS ELB 504 error",
-  "tagline": "AWS ELB Apache24 Tomcat7",
-  "body": "### 环境\r\n* Ubuntu 14.04 \r\n* Apache 2.4.7\r\n* Tomcat7\r\n\r\n\r\n1. mpm_worker 不会出现504 ，mpm_event 可能会出现504 ，出错概率在万分之一左右，出错的时候apache access log看不到出错的request url ， apache2 error log 里面也看不到这个 request url\r\n\r\n2. 用 jmeter 测试的时候最大的response time 超过 ELB idle time 就会出现504\r\n\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
