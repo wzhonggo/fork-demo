@@ -10,7 +10,6 @@ date: 2017-01-03 16:00:00.000000000 +08:00
 * JDK8
 
 1. 数据库表foo, user
-
 ```java
 public class Foo {
     private long id;
@@ -75,7 +74,8 @@ public class User {
 ```bash
 */5 * * * *	  /home/ubuntu/crontab_script/solr_foo.sh
 ```
-solr_foo.sh 里面的内容
+
+9. solr_foo.sh 里面的内容
 ```bash
 curl -d "command=delta-import&verbose=false&clean=false&commit:true&optimize:false&core:foo&name:dataimport" "http://127.0.0.1:8983/solr/foo/dataimport?_="+$(date +%s)+"&indent=on&wt=json"
 ```
