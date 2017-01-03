@@ -10,6 +10,7 @@ date: 2017-01-03 16:00:00.000000000 +08:00
 * JDK8
 
 1. 数据库表foo, user
+
 ```java
 public class Foo {
     private long id;
