@@ -28,7 +28,7 @@ public class User {
 
 3. 复制$solr_home/server/solr/configsets/data_driven_schema_configs 到 $solr_home/server/solr/ ,重命名为foo
 
-4. 在foo/conf目录下面修改solrconfig.xml， 在<requestHandler name="/select" class="solr.SearchHandler">之上添加下面代码
+4. 在foo/conf目录下面修改solrconfig.xml， 在`<requestHandler name="/select" class="solr.SearchHandler">`之上添加下面代码
 ```xml
 <requestHandler name="/dataimport" class="org.apache.solr.handler.dataimport.DataImportHandler">  
 　     <lst name="defaults">  
