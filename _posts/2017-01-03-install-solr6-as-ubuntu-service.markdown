@@ -2,7 +2,7 @@
 layout: post
 title: install solr6 as ubuntu service
 date: 2017-01-03 15:00:00.000000000 +08:00
-------------------------------------------
+---
 
 # 环境
 * Ubuntu 12.04 

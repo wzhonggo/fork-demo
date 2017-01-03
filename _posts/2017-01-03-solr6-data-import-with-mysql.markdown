@@ -2,7 +2,7 @@
 layout: post
 title: solr6 data import with mysql
 date: 2017-01-03 16:00:00.000000000 +08:00
-------------------------------------------
+---
 
 # 环境
 * Ubuntu 12.04 
