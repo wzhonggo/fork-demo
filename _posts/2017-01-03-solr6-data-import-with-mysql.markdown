@@ -10,6 +10,7 @@ date: 2017-01-03 16:00:00.000000000 +08:00
 * JDK8
 
 1. 数据库表foo, user
+
 ```java
 public class Foo {
     private long id;
@@ -29,6 +30,7 @@ public class User {
 3. 复制$solr_home/server/solr/configsets/data_driven_schema_configs 到 $solr_home/server/solr/ ,重命名为foo
 
 4. 在foo/conf目录下面修改solrconfig.xml， 在`<requestHandler name="/select" class="solr.SearchHandler">`之上添加下面代码
+
 ```xml
 <requestHandler name="/dataimport" class="org.apache.solr.handler.dataimport.DataImportHandler">  
 　     <lst name="defaults">  
@@ -38,6 +40,7 @@ public class User {
 ```
 
 5. 在foo/conf下新建data-config.xml文件, 里面内容如下
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>  
 <dataConfig>  
@@ -58,7 +61,8 @@ public class User {
 </dataConfig>  
 ```
 
-6. 在foo/conf下managed-schema.xml 配置field信息：
+6. 在foo/conf下managed-schema.xml 配置field信息
+
 ```xml
 <field name="id" type="long" indexed="true" stored="true" required="true" multiValued="false" />
 <field name="name" type="string" indexed="true" stored="true" required="true" multiValued="false" />
@@ -71,11 +75,13 @@ public class User {
 
 
 8. corntab里面添加下面脚本，让solr delta import data， 没五分钟导入一次数据
+
 ```bash
 */5 * * * *	  /home/ubuntu/crontab_script/solr_foo.sh
 ```
 
 9. solr_foo.sh 里面的内容
+
 ```bash
 curl -d "command=delta-import&verbose=false&clean=false&commit:true&optimize:false&core:foo&name:dataimport" "http://127.0.0.1:8983/solr/foo/dataimport?_="+$(date +%s)+"&indent=on&wt=json"
 ```
