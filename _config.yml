@@ -14,6 +14,10 @@ highlighter: rouge
 
 markdown: kramdown
 
+kramdown:
+       input: GFM
+       hard_wrap: false
+
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
 cover_color: red
 
