@@ -9,7 +9,7 @@ date: 2017-01-03 16:00:00.000000000 +08:00
 * Solr 6.3.0
 * JDK8
 
-1. 数据库表foo, user
+1. 数据库表foo,user
 
 ```java
 public class Foo {

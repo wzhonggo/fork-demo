@@ -9,7 +9,7 @@ date: 2017-01-03 15:00:00.000000000 +08:00
 * Solr 6.3.0
 * JDK8
 
-1. 到官网下载 solr-6.3.0.tgz (JDK版本必须大于等于8)
+1. 到官网下载 solr-6.3.0.tgz(JDK版本必须大于等于8)
 
 2. 解压solr-6.3.0.tgz , 得到install_solr_service.sh
 ```shell

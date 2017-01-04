@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Aws ELB 504 with Apache2
+title: AWS ELB 504 with Apache2
 date: 2016-12-15 18:00:00.000000000 +08:00
 ---
 
