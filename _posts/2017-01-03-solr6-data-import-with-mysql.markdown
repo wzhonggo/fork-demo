@@ -11,19 +11,19 @@ date: 2017-01-03 16:00:00.000000000 +08:00
 
 1. 数据库表foo,user
 
-```java
-public class Foo {
-    private long id;
-    private String name;
-    private Date updateDate;
-    private long userId;
-}
-public class User {
-    private long id;
-    private String username;
-    private Date updateDate;
-}
-```
+   ```java
+    public class Foo {
+        private long id;
+        private String name;
+        private Date updateDate;
+        private long userId;
+    }
+    public class User {
+        private long id;
+        private String username;
+        private Date updateDate;
+    }
+    ```
 
 2. 从$solr_home/dist 目录复制solr-dataimporthandler-6.3.0.jar，solr-dataimporthandler-extras-6.3.0.jar 到$solr_home/server/solr-webapp/webapp/WEB-INF/lib,然后复制mysql的java驱动包 mysql-connector-java-5.1.30.jar 到相同目录
 
@@ -31,13 +31,13 @@ public class User {
 
 4. 在foo/conf目录下面修改solrconfig.xml， 在`<requestHandler name="/select" class="solr.SearchHandler">`之上添加下面代码
 
-```xml
-<requestHandler name="/dataimport" class="org.apache.solr.handler.dataimport.DataImportHandler">  
-　     <lst name="defaults">  
-　        <str name="config">data-config.xml</str>  
-　     </lst>  
-　</requestHandler>  
-```
+   ```xml
+    <requestHandler name="/dataimport" class="org.apache.solr.handler.dataimport.DataImportHandler">  
+    　     <lst name="defaults">  
+    　        <str name="config">data-config.xml</str>  
+    　     </lst>  
+    　</requestHandler>  
+    ```
 
 5. 在foo/conf下新建data-config.xml文件, 里面内容如下
 
