@@ -53,3 +53,8 @@ JDK8
  <reload>manual</reload>
 ```
 
+
+##### 参考文档
+[IntelliJ IDEA 的 Java 热部署插件 JRebel 安装及使用](https://github.com/judasn/IntelliJ-IDEA-Tutorial/blob/newMaster/jrebel-setup.md)
+[IDEA 如何使用JRebel 部署web项目呢?](https://yq.aliyun.com/articles/41697)
+[Application configuration using rebel.xml](https://manuals.zeroturnaround.com/jrebel/standalone/config.html#rebel-xml)
