@@ -49,12 +49,11 @@ JDK8
 然后也会看到上面JRebel reloading修改过的文件的日志，
     - 如果使用jetty-maven-plugin， 手动Recompile 导致整个应用重启， 需要关掉自动热部署
 ```xml
-  <!-- 自动热部署 -->
  <reload>manual</reload>
 ```
 
 
 ##### 参考文档
-[IntelliJ IDEA 的 Java 热部署插件 JRebel 安装及使用](https://github.com/judasn/IntelliJ-IDEA-Tutorial/blob/newMaster/jrebel-setup.md)
-[IDEA 如何使用JRebel 部署web项目呢?](https://yq.aliyun.com/articles/41697)
-[Application configuration using rebel.xml](https://manuals.zeroturnaround.com/jrebel/standalone/config.html#rebel-xml)
+* [IntelliJ IDEA 的 Java 热部署插件 JRebel 安装及使用](https://github.com/judasn/IntelliJ-IDEA-Tutorial/blob/newMaster/jrebel-setup.md)
+* [IDEA 如何使用JRebel 部署web项目呢?](https://yq.aliyun.com/articles/41697)
+* [Application configuration using rebel.xml](https://manuals.zeroturnaround.com/jrebel/standalone/config.html#rebel-xml)
