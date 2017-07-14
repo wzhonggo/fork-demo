@@ -8,7 +8,6 @@ date: 2017-06-15 18:00:00.000000000 +08:00
 * Solr6.3.0 (jetty-server-9.3.8.v20160314)
 * Solr6.6.0 (jetty-server-9.3.14.v20161028)
 
-#
 * Solr默认外网直接可以通过8983端口访问， Solr限制访问的ip为127.0.0.1, 这样外网ip可以访问8983端口，但是api访问，response http code 都是403, jetty xml配置语法参考[Jetty IoC XML format](http://www.eclipse.org/jetty/documentation/9.4.x/quick-start-configure.html)
 * Solr6.3.0 修改$solrpath/server/etc/jetty.xml添加下面 Restricting IP addresses for Jetty and Solr 之间的代码
 
@@ -59,7 +58,7 @@ date: 2017-06-15 18:00:00.000000000 +08:00
 ```
 
 
-# Solr6.6.0 修改$solrpath/server/etc/jetty.xml添加下面 Restricting IP addresses for Jetty and Solr 之间的代码
+* Solr6.6.0 修改$solrpath/server/etc/jetty.xml添加下面 Restricting IP addresses for Jetty and Solr 之间的代码
 ```xml
 <!-- =========================================================== -->
 <!-- Set handler Collection Structure                            -->
