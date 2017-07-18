@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python monitor ubuntu port
-date: 2017-07-14 18:00:00.000000000 +08:00
+date: 2017-07-18 18:00:00.000000000 +08:00
 ---
 # 环境
 * Ubuntu 14.04
