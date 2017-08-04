@@ -59,7 +59,8 @@ date: 2017-06-15 18:00:00.000000000 +08:00
 
 
 * Solr6.6.0 修改$solrpath/server/etc/jetty.xml添加下面 Restricting IP addresses for Jetty and Solr 之间的代码
-```xml
+
+``` xml
 <!-- =========================================================== -->
 <!-- Set handler Collection Structure                            -->
 <!-- =========================================================== -->

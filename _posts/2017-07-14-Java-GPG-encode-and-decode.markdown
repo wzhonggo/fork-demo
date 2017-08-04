@@ -9,6 +9,7 @@ date: 2017-07-14 18:00:00.000000000 +08:00
 * 生成gpg的过程中执行下面命令，可以加快生成的速度
 ``` bash
 # 随机生成1百万个1K的文件
+cd /tmp
 seq 1000000 | xargs -i dd if=/dev/zero of={}.dat bs=1024 count=1
  ```
 # pom 文件中 bouncycastle dependency
