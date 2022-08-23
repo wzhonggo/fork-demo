@@ -1,1 +1,2 @@
-it is test file
+it is test file.
+it is test message.
